@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Startseite</title>
+<link rel="stylesheet" type="text/css" href="css/Home.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+	integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+	crossorigin="" />
+	
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+	integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+	crossorigin=""></script>
+	
+	<script src="js/functions.js"></script>
+
+</head>
+<body class="container">
+		<div class="header">
+			<h1>Kneipenbewertung</h1>
+			<form>
+				<div class="login-field">
+					<label for="vorname">Vorname:</label> <input type="text"
+						id="vorname" name="vorname" required><br> <br> <label
+						for="passwort">Passwort:</label> <input type="password"
+						id="passwort" name="passwort" required><br> <br>
+					<div class="submit-button">
+						<input type="submit" id="login" value="Login"><br> <a
+							id="register" href="/rate-me/Registrierung.html"><button
+								type="button">Registrieren</button></a><br>
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<main class="main" id="mapid">
+		</main>
+	
+		<div class="footer">
+			<p>© 2023
+			<p>
+		</div>
+	<script src="js/functions.js"></script>
+</body>
+</html>
