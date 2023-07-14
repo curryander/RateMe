@@ -8,13 +8,39 @@
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	grid-template-columns: 100%;
-	 grid-template-areas:
+	grid-template-areas:
         "header"
         "main"
         "footer";
         
 }
 
+#registrieren{
+	display: none;
+  	flex-direction: column;
+  	align-items: flex-start;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 400px;
+	padding: 15px;
+	border: 3px solid #2c3d03;
+	background: #ffe6b3;
+	z-index: 1000;
+	
+}
+
+#registrieren label {
+  width: 300px; 
+  margin-right: 20px; 
+}
+
+#registrieren input[type="text"],
+#registrieren input[type="email"],
+#registrieren input[type="password"] {
+  width: 350px;
+  margin-bottom: 10px;
+}
 
 html {
 	font-family: "Lucida Sans", sans-serif;
@@ -63,6 +89,5 @@ main {
 	border-radius: 10px;
 }
 
-/*
-*
-*/
+
+
