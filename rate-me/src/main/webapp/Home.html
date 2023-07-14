@@ -13,25 +13,52 @@
 	integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
 	crossorigin=""></script>
 	
-	<script src="js/functions.js"></script>
+	<script src="js/functions.js" defer></script>
 
 </head>
 <body class="container">
 		<div class="header">
 			<h1>Kneipenbewertung</h1>
 			<form>
-				<div class="login-field">
-					<label for="vorname">Vorname:</label> <input type="text"
-						id="vorname" name="vorname" required><br> <br> <label
-						for="passwort">Passwort:</label> <input type="password"
-						id="passwort" name="passwort" required><br> <br>
-					<div class="submit-button">
-						<input type="submit" id="login" value="Login"><br> <a
-							id="register" href="/rate-me/Registrierung.html"><button
-								type="button">Registrieren</button></a><br>
-					</div>
+			<div class="login-field">
+				<label for="vorname">Benutzername:</label> <input type="text"
+					id="vorname" name="vorname" required><br> <br> <label
+					for="passwort">Passwort:</label> <input type="password"
+					id="passwort" name="passwort" required><br> <br>
+				<div class="submit-button">
+					<input type="submit" id="login" value="Login"><br> <a
+						id="register" href="javascript:registrieren()">
+						<button type="button" id="reg_button">Registrieren</button>
+					</a><br>
 				</div>
-			</form>
+			</div>
+		</form>
+		</div>
+		
+		
+		<div id="registrieren">
+		<form>
+			<label for="vorname">Vorname:</label> <input type="text" id="vorname"
+				name="vorname" required><br>
+			<br> <label for="nachname">Nachname:</label> <input type="text"
+				id="nachname" name="nachname" required><br>
+			<br> <label for="strasse">Straße:</label> <input type="text"
+				id="strasse" name="strasse" required><br>
+			<br> <label for="hausnummer">Hausnummer:</label> <input
+				type="text" id="hausnummer" name="hausnummer" required><br>
+			<br> <label for="plz">PLZ:</label> <input type="text" id="plz"
+				name="plz" required><br>
+			<br> <label for="ort">Ort:</label> <input type="text" id="ort"
+				name="ort" required><br>
+			<br> <label for="email">E-Mail:</label> <input type="email"
+				id="email" name="email" required><br>
+			<br> <label for="benutzerid">Benutzer-ID:</label> <input
+				type="text" id="benutzerid" name="benutzerid" required><br>
+			<br> <label for="passwort">Passwort:</label> <input
+				type="password" id="passwort" name="passwort" required><br>
+			<br> <input type="submit" value="Registrieren">
+			<a href= "javascript:abr_registrieren()"><button type="button" onclick="cancelRegistration()">Abbrechen</button></a>
+		</form>
 		</div>
 		
 		<main class="main" id="mapid">
@@ -41,6 +68,6 @@
 			<p>© 2023
 			<p>
 		</div>
-	<script src="js/functions.js"></script>
+	
 </body>
 </html>

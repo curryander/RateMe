@@ -1,5 +1,4 @@
 
-
 window.onload = function(){
 	myMap = L.map('mapid').setView([49.250723, 7.377122], 13);
 	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -8,3 +7,12 @@ window.onload = function(){
 }).addTo(myMap);
 }
 
+
+function registrieren () {
+	document.querySelector("#registrieren").style.display = "flex";
+}
+
+function abr_registrieren(){
+	document.querySelector("#registrieren").style.display = "none";
+}
+	
