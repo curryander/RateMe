@@ -15,7 +15,7 @@ public class MySQLAccess {
 	public String readDataBase() throws Exception{
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			connect = DriverManager.getConnection("jdbc:mysql://localhost:3307/sys", "root", "1234");
+			connect = DriverManager.getConnection("jdbc:mysql://localhost:3307/mysql_rate-me", "root", "1234");
 			statement = connect.createStatement();
 			resultSet = statement.executeQuery("select * from rateme_poi");
 			

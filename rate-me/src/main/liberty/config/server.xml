@@ -39,4 +39,9 @@
 
     <!-- Default SSL configuration enables trust for default certificates from the Java runtime -->
     <ssl id="defaultSSLConfig" trustDefaultCerts="true" />
+    
+    <dataSource id="mysql" jndiName="jdbc/mysql">
+        <jdbcDriver libraryRef="jdbcLib" />
+        <properties serverName="${db.hostname}" portNumber="3307" databaseName="mysql_rate-me" user="daniel" password="12345678" />
+    </dataSource>
 </server>
