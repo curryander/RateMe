@@ -6,9 +6,9 @@
         <jta-data-source>jdbc/mysql</jta-data-source>
 
         <!-- Converters -->
-        <class>com.app.model.converter.PositionConverter</class>
+        <!-- <class>com.app.model.converter.PositionConverter</class> -->
         <!-- Entities / Model -->
-        <class>com.app.model.User</class>
+        <!-- <class>com.app.model.User</class> -->
 
         <properties>
             <!-- Comment to get no sql log output -->
