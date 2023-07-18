@@ -42,6 +42,6 @@
     
     <dataSource id="mysql" jndiName="jdbc/mysql">
         <jdbcDriver libraryRef="jdbcLib" />
-        <properties serverName="${db.hostname}" portNumber="3307" databaseName="mysql_rate-me" user="daniel" password="12345678" />
+        <properties serverName="localhost" portNumber="3307" databaseName="mysql_rate-me" user="daniel" password="12345678" />
     </dataSource>
 </server>
