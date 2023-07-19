@@ -51,7 +51,7 @@ function initIcons() {
 
 function getAllPoi()
 {
-	fetch("demo/poi",
+	fetch("app/poi",
 		{
 			method: "get",
 			headers: {
