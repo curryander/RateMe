@@ -1,7 +1,6 @@
 window.addEventListener("load", initMap);
 window.addEventListener("load", initIcons);
 
-
 // Global Variable for the map
 let myMap;
 let redIcon;
@@ -23,6 +22,7 @@ function initMap() {
 	
 	// registriere Callback-Methode auf die Marker
 	markers = L.layerGroup().addTo(myMap);
+	markersred = L.layerGroup().addTo(myMap);
 }
 
 // Initialisiert die Icons
@@ -60,7 +60,6 @@ function getAllPoi()
 			}
 		})
 		.then( response =>  response.json())
-		.then()
         .then( pois     =>  showMarker(pois) )
         .catch(error    =>  console.error('Error:', error) );
 }
@@ -70,9 +69,16 @@ function showMarker(pois)
 	console.log("showLabels");
 	for (let i = 0; i < pois.length; i++) {
 		let poi = pois[i];
+		
+		let event;
 
 		let marker = L.marker([poi.position.lat, poi.position.lon], { icon: blueIcon })
-			.addTo(myMap).on('click', (event) => onPoiSelected(event, poi));
+			.addTo(myMap).on('click', (event) =>{
+				onPoiSelected(event, poi)
+				console.log(event);
+				});
+			
+
 			
 	}
 }
@@ -81,7 +87,9 @@ function showMarker(pois)
 
 function onPoiSelected(event, poi)
 {
-   // todo
+   let marker = L.marker([poi.position.lat, poi.position.lon], { icon: redIcon}).addTo(myMap).on('click', (remove) => {
+	   marker.remove();
+   }); 
    console.log("poi selected, " + poi.poiType + " id " + poi.id );
 }
 
@@ -93,5 +101,7 @@ function registrieren () {
 function abr_registrieren(){
 	document.querySelector("#registrieren").style.display = "none";
 }
-	
-	
+
+
+
+

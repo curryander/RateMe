@@ -71,6 +71,10 @@ main {
 	grid-area: rating;
 	border-bottom: 2px solid #fff;
     background:#F3E2A9;
+    top: 20px;
+	left: 20px;
+	padding: 15px;
+
 }
 
 .footer {
