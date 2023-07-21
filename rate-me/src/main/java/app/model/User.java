@@ -13,7 +13,7 @@ import jakarta.persistence.*;
 @Table(name = "rateme_user")
 @NamedQueries({
 	@NamedQuery(name = "User.findAll", query = "SELECT r FROM User r"),
-	@NamedQuery(name = "User.findByUserName", query = "SELECT r FROM User r WHERE r.userName = :userName")
+	@NamedQuery(name = "User.findByUserName", query = "SELECT r FROM User r WHERE r.username = :username")
 })
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -24,16 +24,16 @@ public class User implements Serializable {
 	private Integer userId;
 
 	@Column(name = "username", length = 20, nullable = false, unique = true)
-	private String userName;
+	private String username;
 
 	@Column(name = "E_Mail", length = 50, nullable = false)
 	private String email;
 
 	@Column(name = "firstname", length = 20, nullable = false)
-	private String firstName;
+	private String firstname;
 
 	@Column(name = "lastname", length = 20, nullable = false)
-	private String lastName;
+	private String lastname;
 
 	@Column(length = 30, nullable = false)
 	private String street;
@@ -64,12 +64,12 @@ public class User implements Serializable {
 		this.userId = userId;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getEmail() {
@@ -80,20 +80,20 @@ public class User implements Serializable {
 		this.email = email;
 	}
 
-	public String getFirstName() {
-		return firstName;
+	public String getFirstname() {
+		return firstname;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
 	}
 
-	public String getLastName() {
-		return lastName;
+	public String getLastname() {
+		return lastname;
 	}
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
 
 	public String getStreet() {

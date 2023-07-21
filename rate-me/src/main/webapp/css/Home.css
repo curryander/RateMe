@@ -16,13 +16,13 @@
 
 
 
-#registrieren{
+#registration{
 	display: none;
   	flex-direction: column;
   	align-items: flex-start;
 	position: absolute;
 	top: 20px;
-	left: 20px;
+	left: 50px;
 	width: 400px;
 	padding: 15px;
 	border: 3px solid #2c3d03;
@@ -31,14 +31,14 @@
 	
 }
 
-#registrieren label {
+#registration  label {
   width: 300px; 
   margin-right: 20px; 
 }
 
-#registrieren input[type="text"],
-#registrieren input[type="email"],
-#registrieren input[type="password"] {
+#registration input[type="text"],
+#registration  input[type="email"],
+#registration  input[type="password"] {
   width: 350px;
   margin-bottom: 10px;
 }
@@ -99,6 +99,52 @@ main {
 	padding: 10px;
 	margin-right: 10;
 	border-radius: 10px;
+}
+
+form .password-strength-indicator {
+    height: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form .password-strength-indicator span {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: lightgrey;
+    border-radius: 5px;
+}
+
+form .password-strength-indicator span:nth-child(2) {
+    margin: 0 3px;
+}
+
+form .password-strength-indicator span.active:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.password-strength-indicator span.veryweak:before {
+    background-color: red;
+}
+.password-strength-indicator span.weak:before {
+    background-color: rgb(250, 101, 2);
+}
+.password-strength-indicator span.medium:before {
+    background-color: orange;
+}
+.password-strength-indicator span.good:before {
+    background-color: yellow;
+}
+.password-strength-indicator span.strong:before {
+    background-color: #23ad5c;
 }
 
 

@@ -26,11 +26,11 @@ public class UserDAOImpl implements UserDAO {
 		User user = new User();
 		user.setCity(data.getCity());
 		user.setEmail(data.getEmail());
-		user.setFirstName(data.getFirstName());
-		user.setLastName(data.getLastName());
+		user.setFirstname(data.getFirstname());
+		user.setLastname(data.getLastname());
 		user.setStreet(data.getStreet());
 		user.setStreetNr(data.getStreetNr());
-		user.setUserName(data.getUserName());
+		user.setUsername(data.getUsername());
 		user.setZip(data.getZip());
 
 		byte[] salt;

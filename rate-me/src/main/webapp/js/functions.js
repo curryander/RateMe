@@ -1,12 +1,11 @@
 window.addEventListener("load", initMap);
 window.addEventListener("load", initIcons);
 
+
 // Global Variable for the map
 let myMap;
 let redIcon;
 let blueIcon;
-
-
 
 
 // Initialisierung der Karte
@@ -22,7 +21,7 @@ function initMap() {
 	
 	// registriere Callback-Methode auf die Marker
 	markers = L.layerGroup().addTo(myMap);
-	markersred = L.layerGroup().addTo(myMap);
+
 }
 
 // Initialisiert die Icons
@@ -94,12 +93,12 @@ function onPoiSelected(event, poi)
 }
 
 
-function registrieren () {
-	document.querySelector("#registrieren").style.display = "flex";
+function open_registration() {
+	document.querySelector("#registration").style.display = "flex";
 }
 
-function abr_registrieren(){
-	document.querySelector("#registrieren").style.display = "none";
+function cancel_registration(){
+	document.querySelector("#registration").style.display = "none";
 }
 
 

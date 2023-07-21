@@ -5,8 +5,8 @@ import app.model.User;
 public class UserResponseData {
 	private Integer userId;
 	private String email;
-	private String firstName;
-	private String lastName;
+	private String firstname;
+	private String lastname;
 	private String street;
 	private String streetNr;
 	private String zip;
@@ -28,20 +28,20 @@ public class UserResponseData {
 		this.email = email;
 	}
 
-	public String getFirstName() {
-		return firstName;
+	public String getFirstname() {
+		return firstname;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
 	}
 
-	public String getLastName() {
-		return lastName;
+	public String getLastname() {
+		return lastname;
 	}
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
 
 	public String getStreet() {
@@ -81,8 +81,8 @@ public class UserResponseData {
 		user.setUserId( entity.getUserId() );
 		user.setCity(entity.getCity());
 		user.setEmail(entity.getEmail());
-		user.setFirstName(entity.getFirstName());
-		user.setLastName(entity.getLastName());
+		user.setFirstname(entity.getFirstname());
+		user.setLastname(entity.getLastname());
 		user.setStreet(entity.getStreet());
 		user.setStreetNr(entity.getStreetNr());
 		user.setZip(entity.getZip());

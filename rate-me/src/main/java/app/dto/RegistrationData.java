@@ -1,22 +1,22 @@
 package app.dto;
 
 public class RegistrationData {
-	private String userName;
+	private String username;
 	private String password;
 	private String email;
-	private String firstName;
-	private String lastName;
+	private String firstname;
+	private String lastname;
 	private String street;
 	private String streetNr;
 	private String zip;
 	private String city;
 
-	public String getUserName() {
-		return userName;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getPassword() {
@@ -35,20 +35,20 @@ public class RegistrationData {
 		this.email = email;
 	}
 
-	public String getFirstName() {
-		return firstName;
+	public String getFirstname() {
+		return firstname;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
 	}
 
-	public String getLastName() {
-		return lastName;
+	public String getLastname() {
+		return lastname;
 	}
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
 	}
 
 	public String getStreet() {
@@ -85,8 +85,8 @@ public class RegistrationData {
 
 	@Override
 	public String toString() {
-		return "RegistrationData [userName=" + userName + ", password=" + password + ", email=" + email + ", firstName="
-				+ firstName + ", lastName=" + lastName + ", street=" + street + ", streetNr=" + streetNr + ", zip="
+		return "RegistrationData [username=" + username + ", password=" + password + ", email=" + email + ", firstname="
+				+ firstname + ", lastname=" + lastname + ", street=" + street + ", streetNr=" + streetNr + ", zip="
 				+ zip + ", city=" + city + "]";
 	}
 	
